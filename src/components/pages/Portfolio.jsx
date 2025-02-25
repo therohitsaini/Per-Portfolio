@@ -24,15 +24,7 @@ function Portfolio() {
       
         <div className="portfolio-projects border border-blue-700 w-full h-full flex gap-7 px-20 max-sm:px-5  max-sm:flex max-sm:flex-col  border-none  pb-20 max-sm:py-10">
           <div className="border border-red-800 w-full border-none bg-black  ">
-          { 
-            <div className={`hover absolute  flex justify-center items-center  hover:opacity-55  h-[415px] w-[665px] duration-500 ${hoverEffect ?   "hover:bg-black " || "opacity-20"  : ""} `}
-            onMouseOver={hoverHandle}
-            onMouseLeave={hoverHandleLeave}
-            >
-              
-              <button type="btn " className="text-xl text-red-700 border border-blue-800 px-3 py-2  ">See more</button>
-            </div>
-          }
+         
 
             <div className="project flex justify-end items-center p-2 ">
               {/* <p>About Project</p> */}

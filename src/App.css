@@ -1,0 +1,210 @@
+.html{
+    width: 90%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px 0px ;
+    background-color:rgb(218, 222, 223);
+    animation: javascript 1.5s;
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.Tailwind{
+    width: 90%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px 0px ;
+    background-color:rgb(218, 222, 223);
+    animation: Tailwind 2s;
+}
+@keyframes Tailwind {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.js{
+    width: 80%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px 0px ;
+    background-color:rgb(218, 222, 223);
+    animation: javascript 2.4s;
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.React{
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px 0px ;
+    background-color:rgb(218, 222, 223);
+    animation: javascript 2.6s;
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.MongoDB{
+    width: 80%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px 0px ;
+    background-color:rgb(218, 222, 223);
+    animation: javascript 3.5s;
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.Node{
+    width: 60%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px 0px ;
+    background-color:rgb(218, 222, 223);
+    animation: javascript 3;
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.Express{
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px 0px ;
+    background-color:rgb(218, 222, 223);
+    animation: Express 3.5s;
+}
+@keyframes Express {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+/* start animation sections  */
+.skill-ui-ux{
+    animation: apprear 2s linear;
+    /* animation-timeline: view();
+    animation-range: entry 70% cover 40%; */
+
+}
+@keyframes apprear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.img-section{
+    animation: home 3s linear;
+}
+@keyframes home {
+    from{
+        opacity: 0;
+         transform: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: 1;
+    }
+}
+.hero-section{
+    animation: home 3s linear;
+}
+@keyframes home {
+    from{
+        opacity: 0;
+         transform: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: 1;
+    }
+}
+/* .img-section{
+    animation: home linear;
+    animation-timeline: view();
+    animation-range: entry 70% cover 40%;
+
+}
+@keyframes home {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+/* portFolio animation section  */
+.project {
+    animation: portfolio 3s linear ;
+}
+@keyframes portfolio{
+    from{
+        opacity: 0;
+        transform: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: 1;
+    }
+}
+
+.description-about-me,img
+{
+    animation: portfolio 3s linear ;
+}
+@keyframes portfolio{
+    from{
+        opacity: 0;
+      transform: translateX(-100);
+    }
+    to{
+        opacity: 1;
+      transform: translateX(0);
+        
+    }
+}

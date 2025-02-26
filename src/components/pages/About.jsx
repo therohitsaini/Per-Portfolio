@@ -14,7 +14,7 @@ function About() {
         </p>
         <div className="about-Detials-section w-full h-full flex max-sm:flex max-sm:flex-col-reverse py-8 ">
           <div className="img w-full border border-green-600  border-none">
-            <img className=" object-cover max-sm:rounded-b-md" src="./public/images/pexels-divinetechygirl-1181269.jpg" alt="" />
+            <img className=" object-cover max-sm:rounded-b-md" src="./images/pexels-divinetechygirl-1181269.jpg" alt="" />
           </div>
           <div className="description-about-me w-full border border-green-600 px-20 flex flex-col items-center justify-center bg-blue-400 text-white max-sm:px-2 max-sm:py-5 max-sm:rounded-t-md border-none">
             <h1 className="font-serif text-3xl  max-sm:px-2">Crafting Innovative Web Solutions with Passion & Precision</h1>

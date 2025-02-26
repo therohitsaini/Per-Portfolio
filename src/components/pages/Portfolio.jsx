@@ -14,7 +14,7 @@ function Portfolio() {
   console.log(hoverEffect)
   
   return (
-    <div className="Portfolio-container max-sm:mt-10">
+    <div className="Portfolio-container ">
       <div className="portfolio-heading w-full flex justify-center items-center my-5 flex-col">
         <h1 className="font-semibold text-4xl my-1 ">Portfolio</h1>
         <div className="border border-slate-300 w-28 flex justify-center ">

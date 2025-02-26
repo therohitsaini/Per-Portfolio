@@ -12,6 +12,7 @@ function Navbar() {
   console.log(toggleBtn)
   return (
     <>
+ 
       <header className="header w-full sticky top-0 px-20 bg-black max-sm:px-2 z-40 ">
         <nav className="navbar flex justify-between items-center   text-white p-2  border-b border-slate-600 max-sm:py-4 ">
           <h1 className="font-semibold text-xl">PORTFOLIO</h1>
@@ -27,7 +28,8 @@ function Navbar() {
           <button className="nav-btn  bg-blue-600 px-4 p-2 font-semibold text-lg rounded-md max-sm:hidden">Get Started</button>
           <div className="md:hidden"
           onClick={() => setToggleBtn(!toggleBtn)}
-          >{toggleBtn ? 
+          >
+            {toggleBtn ? 
           <div className="text-3xl"><Icon icon="basil:cross-outline" /></div> 
           : 
           <div className="text-3xl"><Icon icon="mage:align-right" /></div>}</div>

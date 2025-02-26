@@ -180,7 +180,7 @@
 } */
 /* portFolio animation section  */
 .project {
-    animation: portfolio 3s linear ;
+    animation: portfolio 1s linear ;
 }
 @keyframes portfolio{
     from{
@@ -207,4 +207,12 @@
       transform: translateX(0);
         
     }
+}
+
+.Icone{
+ transition: 3s;
+}
+.Icone{
+    
+    transform: rotateX(360ged);
 }

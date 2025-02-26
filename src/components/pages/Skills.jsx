@@ -121,7 +121,7 @@ function Skills() {
         <div
           onMouseOver={handleCardHover}
           onMouseLeave={handleCardLeave}
-          className="skill-ui-ux border border-slate-200 w-full   p-10 max-sm:px-5 flex flex-col gap-5 rounded-md hover:bg-gradient-to-r from-violet-600 to-indigo-600 duration-800 bg-white hover:text-white  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:py-10"
+          className="skill-ui-ux border border-slate-200 w-full   p-10 max-sm:px-5 flex flex-col gap-5 rounded-md hover:bg-gradient-to-r from-violet-600 to-indigo-600 duration-800 bg-white hover:text-white  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:py-7"
         >
           <div
             className={`icone border-2  border-slate-300 h-14 w-14 rounded-full text-5xl flex justify-center items-center  rotate-y-180 duration-800  
@@ -144,7 +144,7 @@ function Skills() {
           </p>
           <button
             type="text "
-            className="border border-yellow-600  px-3 p-2 rounded-md font-semibold max-sm:w-full bg-black text-white border-none"
+            className="  px-3 p-2 rounded-md font-semibold max-sm:w-full bg-black text-white border-none"
           >
             See More
           </button>
@@ -155,7 +155,7 @@ function Skills() {
         <div
           onMouseOver={handleCardHover_1}
           onMouseLeave={handleCardLeave_1}
-          className="skill-ui-ux border border-slate-200 bg-white w-full  p-10 max-sm:px-5 max-sm:py-10 flex flex-col gap-3 rounded-md hover:bg-gradient-to-r from-violet-600 to-indigo-400 duration-600 hover:text-white max-sm:flex max-sm:flex-col max-sm:items-center"
+          className="skill-ui-ux border border-slate-200 bg-white w-full  p-10 max-sm:px-5 max-sm:py-7 flex flex-col gap-5 rounded-md hover:bg-gradient-to-r from-violet-600 to-indigo-400 duration-600 hover:text-white max-sm:flex max-sm:flex-col max-sm:items-center"
         >
           <div
             className={`icone border-2 border-slate-300 h-14 w-14 rounded-full  text-5xl flex justify-center items-center ${
@@ -177,7 +177,7 @@ function Skills() {
           </p>
           <button
             type="text "
-            className="border border-yellow-400 px-3 p-2 rounded-md font-semibold max-sm:w-full"
+            className="bg-black text-white px-3 p-2 rounded-md font-semibold max-sm:w-full"
           >
             See More
           </button>

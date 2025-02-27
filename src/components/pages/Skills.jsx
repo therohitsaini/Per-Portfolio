@@ -125,7 +125,7 @@ function Skills() {
         >
           <div
             className={`icone border-2  border-slate-300 h-14 w-14 rounded-full text-5xl flex justify-center items-center  rotate-y-180 duration-800  
-          ${isCardhover == true ? "text-red-500" : "text-black"}
+          ${isCardhover == true ? "text-white" : "text-black"}
             `}
           >
             <Icon icon="fluent:card-ui-20-filled" />
@@ -158,8 +158,8 @@ function Skills() {
           className="skill-ui-ux border border-slate-200 bg-white w-full  p-10 max-sm:px-5 max-sm:py-7 flex flex-col gap-5 rounded-md hover:bg-gradient-to-r from-violet-600 to-indigo-400 duration-600 hover:text-white max-sm:flex max-sm:flex-col max-sm:items-center"
         >
           <div
-            className={`icone border-2 border-slate-300 h-14 w-14 rounded-full  text-5xl flex justify-center items-center ${
-              isCardhover_1 ? "text-orange-500" : ""
+            className={`icone border-2 border-slate-300 h-14 w-14 rounded-full  text-5xl flex justify-center items-center  ${
+              isCardhover_1 ? "text-white" : ""
             }`}
           >
             <Icon icon="mdi:web" />

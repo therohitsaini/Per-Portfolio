@@ -1,4 +1,4 @@
-.html{
+/* .html{
     width: 90%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -117,7 +117,7 @@
     100%{
         width: 70%;
     }
-}
+} */
 /* start animation sections  */
 .skill-ui-ux{
     animation: apprear 2s linear;
@@ -137,29 +137,29 @@
 }
 
 .img-section{
-    animation: homeimg 1.2s linear;
-}
-@keyframes homeimg {
-    from{
-        opacity: 0;
-         scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
-}
-.hero-section{
-    animation: home 1s linear;
+    animation: home 3s linear;
 }
 @keyframes home {
     from{
         opacity: 0;
-         scale: 0.5;
+         transform: 0.5;
     }
     to{
         opacity: 1;
-        scale: 1;
+        transform: 1;
+    }
+}
+.hero-section{
+    animation: home 3s linear;
+}
+@keyframes home {
+    from{
+        opacity: 0;
+         transform: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: 1;
     }
 }
 /* .img-section{
@@ -193,24 +193,9 @@
     }
 }
 
-.description-about-me 
+.description-about-me,img
 {
-    animation: portfoliotext 1s linear ;
-}
-@keyframes portfoliotext{
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-        
-    }
-}
-.img
-{
-    animation: portfolio 1s linear ;
+    animation: portfolio 3s linear ;
 }
 @keyframes portfolio{
     from{
@@ -224,3 +209,14 @@
     }
 }
 
+.Icone{
+ transition: 3s;
+}
+.Icone{
+    
+    transform: rotateX(360ged);
+    background-color:blue;
+    width: 100%;
+    padding: 5px ;
+   
+}

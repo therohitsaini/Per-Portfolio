@@ -1,4 +1,5 @@
 import React from "react";
+// import Navbar from "../navbar/Navbar";
 // import homeimg from "src/img/im.jpg"
 
 function Home() {

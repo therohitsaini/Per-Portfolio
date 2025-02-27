@@ -22,17 +22,18 @@ function Contact() {
   //     alert("incrrect");
   //   }
   // };
+  // console.log(form)
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm("service_v3laqmn", "template_n63ztv8", form.current, {
         publicKey: "OjifrSCCv30KX2yZN",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          // console.log("SUCCESS!");
+          alert(" Submiit Succesfully")
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -64,18 +65,20 @@ function Contact() {
             today, and let’s build a stunning, functional, and user-friendly
             website that meets your needs!
           </p>
-         <div className="per-contac flex flex-col gap-2 mt-3">
-         <div className="contact-num flex gap-1 text-slate-300">
-               <div className="icone text-2xl "> <Icon icon="line-md:phone-call-loop" /> </div>
-               <p className="num-p text-base ">: +91 9929306874 </p>
-
+          <div className="contact-num flex gap-1 text-slate-300">
+            <div className="icone text-2xl ">
+              {" "}
+              <Icon icon="line-md:phone-call-loop" />{" "}
+            </div>
+            <p className="num-p text-base ">: +91 9929306874 </p>
           </div>
           <div className="contact-Email flex gap-1 text-slate-300">
-               <div className="icone text-2xl "> <Icon icon="line-md:email-arrow-up" /> </div>
-               <p className="num-p text-base ">: razsaini99@gmail.com </p>
-
+            <div className="icone text-2xl ">
+              {" "}
+              <Icon icon="line-md:phone-call-loop" />{" "}
+            </div>
+            <p className="num-p text-base ">: razsaini99@gmail.com </p>
           </div>
-         </div>
         </div>
         <div className="Contact-form w-full h-[400px] border border-red-700 flex justify-center items-center max-sm:h-full max-sm:w-full  bg-white max-sm:mb-3 max-sm:rounded-b-md border-none">
           <form

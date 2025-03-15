@@ -37,7 +37,7 @@ function Skills() {
     color: white;
     margin-top : 1rem;
     font-size: 17px;
-    font-fa
+    
     
   `;
   const handleCardHover = () => {

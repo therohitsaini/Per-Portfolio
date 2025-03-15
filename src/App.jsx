@@ -1,28 +1,29 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/pages/Home";
-import Service from "./components/pages/Service";
-import Skills from "./components/pages/Skills";
-import Contact from "./components/pages/Contact";
-import Portfolio from "./components/pages/Portfolio";
 import About from "./components/pages/About";
-import Footer from "./components/pages/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Skills from "./components/pages/Skills";
+import Portfolio from "./components/pages/Portfolio";
+import Contact from "./components/pages/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
+
 
   return (
     <>
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Routes >
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skill" element={<Skills />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+
+
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

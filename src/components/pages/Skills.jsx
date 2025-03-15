@@ -8,7 +8,7 @@ function Skills() {
 
   const progressKeyframe = (range) => keyframes`
     0%{
-    width: 40%;
+    width: 50%;
       }
       100%{
           width: ${range}%;
@@ -32,10 +32,12 @@ function Skills() {
   const Button = styled.button`
     background-color: black;
     width: 100%;
-    padding: 7px;
+    padding: 10px;
     border-radius: 7px;
     color: white;
-    margin-top : 0.5rem;
+    margin-top : 1rem;
+    font-size: 17px;
+    font-fa
     
   `;
   const handleCardHover = () => {
@@ -103,8 +105,8 @@ function Skills() {
                 <p className="pl-2">Wordpress</p>{" "}
                 <div className="p text-sm">60%</div>
               </ProgressBar>
-              <div className="text-xl flex justify-center items-center px-2">
-                <Icon icon="skill-icons:tailwindcss-dark" />
+              <div className="text-2xl flex justify-center items-center px-2">
+                <Icon icon="material-icon-theme:folder-wordpress-open" />
               </div>
             </p>
 
@@ -116,8 +118,8 @@ function Skills() {
                 <p className="pl-2">Javascript </p>{" "}
                 <div className="p text-sm">70%</div>
               </ProgressBar>
-              <div className="text-xl flex justify-center items-center px-2">
-                <Icon icon="skill-icons:tailwindcss-dark" />
+              <div className="text-2xl flex justify-center items-center px-2">
+                <Icon icon="material-icon-theme:javascript-map" />
               </div>
             </p>
             <p className="border border-slate-300 rounded-md  flex justify-between items-cente">
@@ -140,7 +142,7 @@ function Skills() {
                 <p className="pl-2">MangoDB</p>{" "}
                 <div className="p text-sm">80%</div>
               </ProgressBar>
-              <div className="text-xl flex justify-center items-center px-2">
+              <div className="text-2xl flex justify-center items-center px-2">
                 <Icon icon="devicon:mongodb-wordmark" />
               </div>
             </p>
@@ -149,12 +151,12 @@ function Skills() {
                 range={70}
                 className="flex justify-between items-center"
               >
-                <p className="pl-2">MangoDB</p>{" "}
+                <p className="pl-2">Express </p>{" "}
                 <div className="p text-sm">70%</div>
               </ProgressBar>
 
               <div className="text-xl flex justify-center items-center px-2 ">
-                <Icon icon="logos:nodejs" />
+                <Icon icon="skill-icons:expressjs-dark" />
               </div>
             </p>
 
@@ -177,7 +179,7 @@ function Skills() {
         <div
           onMouseOver={handleCardHover}
           onMouseLeave={handleCardLeave}
-          className="skill-ui-ux border border-slate-200 w-full   p-10 max-sm:px-5 flex flex-col gap-3 rounded-md hover:bg-gradient-to-r from-violet-600 to-indigo-600 duration-800 bg-white hover:text-white  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:py-10"
+          className="skill-ui-ux border border-slate-200 w-full   p-10 max-sm:px-5 flex flex-col gap-3 rounded-md hover:bg-blue-600 duration-800 bg-white hover:text-white  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:py-10"
         >
           <div
             className={`icone border-2  border-slate-300 h-14 w-14 rounded-full text-5xl flex justify-center items-center  rotate-y-180 duration-800  
@@ -209,7 +211,7 @@ function Skills() {
         <div
           onMouseOver={handleCardHover_1}
           onMouseLeave={handleCardLeave_1}
-          className="skill-ui-ux border border-slate-200 bg-white w-full  p-10 max-sm:px-5 max-sm:py-10 flex flex-col gap-3 rounded-md hover:bg-gradient-to-r from-violet-600 to-indigo-400 duration-600 hover:text-white max-sm:flex max-sm:flex-col max-sm:items-center"
+          className="skill-ui-ux border border-slate-200 bg-white w-full  p-10 max-sm:px-5 max-sm:py-10 flex flex-col gap-3 rounded-md hover:bg-blue-600 duration-600 hover:text-white max-sm:flex max-sm:flex-col max-sm:items-center"
         >
           <div
             className={`icone border-2 border-slate-300 h-14 w-14 rounded-full  text-5xl flex justify-center items-center ${

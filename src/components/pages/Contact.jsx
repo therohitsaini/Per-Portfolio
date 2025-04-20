@@ -49,14 +49,14 @@ function Contact() {
         <div className="border border-slate-300 w-28 flex justify-center">
           <div className="border-2 border-blue-600 w-10  absolute"></div>
         </div>
-        <p className="px-64 text-center my-4 text-slate-600 max-sm:px-2 from-normal">
+        <p className="px-64 text-center my-4 text-slate-500 max-sm:px-2 ">
           I’d love to discuss your project and how I can help. Feel free to
           reach out if you’re interested in collaborating or just want to chat
           about web development
         </p>
       </div>
       <div className="contact-text border border-blue-600 flex  max-sm:flex max-sm:flex-col border-none ">
-        <div className="text w-full border border-red-700 flex flex-col justify-center gap-4 border-none bg-blue-500 px-5 max-sm:py-4 max-sm:rounded-t-md">
+        <div className="text w-full border border-red-700 flex flex-col justify-center gap-3 border-none bg-blue-500 px-5 max-sm:py-4 max-sm:rounded-t-md">
           <h1 className="contact-heading font-serif text-5xl text-white max-sm:text-3xl">
             Let's Connect and Build Something Great!
           </h1>
@@ -65,6 +65,9 @@ function Contact() {
             today, and let’s build a stunning, functional, and user-friendly
             website that meets your needs!
           </p>
+          {/* <address className="font-semibold text-white flex flex-col mb-3">
+            B-504 Kota Road Sangod,<span>Kota(Rajasthan),India</span>
+          </address> */}
           <div className="contact-num flex gap-1 text-slate-300">
             <div className="icone text-2xl ">
               {" "}
@@ -75,7 +78,7 @@ function Contact() {
           <div className="contact-Email flex gap-1 text-slate-300">
             <div className="icone text-2xl ">
               {" "}
-              <Icon icon="line-md:phone-call-loop" />{" "}
+              <Icon icon="line-md:email-arrow-up-twotone" />{" "}
             </div>
             <p className="num-p text-base ">: razsaini99@gmail.com </p>
           </div>

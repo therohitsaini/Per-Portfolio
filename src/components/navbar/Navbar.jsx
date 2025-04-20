@@ -15,7 +15,7 @@ function Navbar() {
 
       <header className="header w-full sticky top-0 px-20 bg-black max-sm:px-2 z-40 ">
         <nav className="navbar flex justify-between items-center   text-white p-2  border-b border-slate-600 max-sm:py-4 ">
-          <h1 className="font-semibold text-xl">PORTFOLIO</h1>
+          <h1 className="font-semibold text-xl">ROHIT.in</h1>
           <ul className="un-order-list flex gap-14 font-semibold max-sm:hidden" >
             <li><a href="#" className="text-slate-400 hover:text-white duration-500">HOME</a></li>
             <li><a href="#" className="text-slate-400 hover:text-white duration-500" >ABOUT</a></li>

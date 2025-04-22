@@ -1,10 +1,11 @@
 import React from 'react'
+import { AnimatedCard, AnimatedLeftWrapper, AnimatedWrapper } from '../styledComponent/StyledCOmp'
 
 function HeroSection() {
   return (
     <div className="container max-w-full border border-red-800 border-none ">
         <div className="home-section flex justify-between px-20 gap-5 bg-black text-white max-sm:flex max-sm:flex-col max-sm:px-5 max-sm:pt-20 max-sm:pb-10 max-sm:gap-14">
-          <div className="hero-section w-full h-[550px] flex flex-col justify-center max-sm:h-[350px] ">
+          <AnimatedWrapper className="hero-section w-full h-[550px] flex flex-col justify-center max-sm:h-[350px] ">
             <span className="text-5xl font-semibold max-sm:text-2xl max-sm:text-center max-sm:mb-3">
               Hi!
             </span>
@@ -31,14 +32,14 @@ function HeroSection() {
                 Projects
               </button>
             </div>
-          </div>
+          </AnimatedWrapper>
           <div className="img-section border border-blue-600 w-full flex justify-center items-center border-none ">
-            <div className="bg-gradient-to-r from-blue-600 to-violet-600 rounded-full p-3  ">
+            <AnimatedLeftWrapper className="bg-gradient-to-r from-blue-600 to-violet-600 rounded-full p-3  ">
               <img
                 className="home-img h-[400px] w-[400px] max-sm:h-[270px] max-sm:w-[270px] rounded-full bg-black object-cover "
                 src="https://img.freepik.com/free-photo/artistic-businessman_23-2147641280.jpg?uid=R167309508&ga=GA1.1.1966480882.1738846517&semt=ais_hybrid"
               />
-            </div>
+            </AnimatedLeftWrapper>
            
           </div>
         </div>

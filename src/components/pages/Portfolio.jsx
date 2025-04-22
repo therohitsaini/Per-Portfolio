@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
+import { AnimatedCard } from "../styledComponent/StyledCOmp";
 
 
 function Portfolio() {
@@ -14,7 +16,7 @@ function Portfolio() {
   console.log(hoverEffect)
   
   return (
-    <div className="Portfolio-container ">
+    <AnimatedCard className="Portfolio-container ">
       <div className="portfolio-heading w-full flex justify-center items-center my-5 flex-col">
         <h1 className="font-semibold text-4xl my-1 ">Portfolio</h1>
         <div className="border border-slate-300 w-28 flex justify-center ">
@@ -28,21 +30,21 @@ function Portfolio() {
 
             <div className="project flex justify-end items-center p-2 ">
               {/* <p>About Project</p> */}
-              <div className="icone border-2  text-2xl rounded-full p-2 text-white mr-2 max-sm:my-2"><Icon icon="solar:course-up-broken" /></div>
+              <div className="icone border-2  text-2xl rounded-full p-2 text-white mr-2 max-sm:my-2"><Icon icon="solar:course-up-broken" /> <Link href="https://pet-bloging-rohits-projects-f44a0e3e.vercel.app/" /> </div>
             </div>
-            <img className="object-contain h-full w-full max-sm:px-4 max-sm:object-contain " src="./images/Screenshot 2025-01-21 192715.png" />
+            <img className="object-contain h-full w-full max-sm:px-4 max-sm:object-contain " src={`${import.meta.env.BASE_URL}images/image.png`} />
           </div>
           <div className="border border-red-800 w-full border-none bg-black max-sm:px-2">
           <div className="p-2 flex justify-end items-center pr-5">
               {/* <p>About Project</p> */}
               <div className="icone border-2 text-2xl rounded-full p-2 text-white  max-sm:my-2 "><Icon icon="solar:course-up-broken" /></div>
             </div>
-          <img className="object-contain h-full w-full max-sm:px-2 max-sm:object-contain" src="./images/Screenshot 2025-01-18 113351.png" />
+          <img className="object-contain h-full w-full max-sm:px-2 max-sm:object-contain" src={`${import.meta.env.BASE_URL}images/Screenshot 2025-04-21 151224.png`}/>
 
           </div>
         </div>
       </div>
-    </div>
+    </AnimatedCard>
   );
 }
 

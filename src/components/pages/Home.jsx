@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { Element } from "react-scroll";
 
 
 function Home() {
@@ -19,7 +20,9 @@ function Home() {
         <HeroSection />
         <span className='sticky top-[550px]  text-red-800 flex justify-end items-end mr-5  '> <Icon icon={"logos:whatsapp-icon"} fontSize={55} className="animate-bounce " /> </span>
         <About />
-        <Skills />
+        <Element name='skills'>
+          <Skills />
+        </Element>
         <Portfolio />
         <Contact />
 

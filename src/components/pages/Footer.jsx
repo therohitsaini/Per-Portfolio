@@ -7,7 +7,7 @@ function Footer() {
       <div className="p-10 text-white flex gap-6 border-b border-slate-500 max-sm:flex max-sm:flex-col">
         <div className="left w-full  max-sm:flex max-sm:justify-center">
           <img
-            src="/images/footerloge.png"
+            src="https://images-platform.99static.com/QfA3hy0kI2_mRUqAWb_f70lPSc8=/127x158:1128x1159/500x500/top/smart/99designs-contests-attachments/131/131570/attachment_131570475"
             alt=""
             srcset=""
             className="object-cover h-64 w-64 border-b-[7px] border-blue-600 "

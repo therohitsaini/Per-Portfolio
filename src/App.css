@@ -135,7 +135,7 @@
   }
 }
 
-.img-section {
+.img-section77 {
   animation: home 3s linear;
 }
 @keyframes home {
@@ -148,7 +148,7 @@
     transform: 1;
   }
 }
-.hero-section {
+.hero-section77 {
   animation: home 3s linear;
 }
 @keyframes home {
@@ -178,7 +178,7 @@
     }
 } */
 /* portFolio animation section  */
-.project {
+.projectll {
   animation: portfolio 1s linear;
 }
 @keyframes portfolio {
@@ -192,8 +192,8 @@
   }
 }
 
-.description-about-me,
-img {
+.description-about-melll,
+imgkk {
   animation: portfolio 3s linear;
 }
 @keyframes portfolio {

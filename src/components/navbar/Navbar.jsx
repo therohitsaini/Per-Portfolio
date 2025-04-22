@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import './App.css'
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [toggleBtn, setToggleBtn] = useState(false)
@@ -15,14 +16,14 @@ function Navbar() {
 
       <header className="header w-full sticky top-0 px-20 bg-black max-sm:px-2 z-40 ">
         <nav className="navbar flex justify-between items-center   text-white p-2  border-b border-slate-600 max-sm:py-4 ">
-          <h1 className="font-semibold text-xl">ROHIT.in</h1>
+          <h1 className="font-semibold text-xl">PORTFOLIO</h1>
           <ul className="un-order-list flex gap-14 font-semibold max-sm:hidden" >
-            <li><a href="#" className="text-slate-400 hover:text-white duration-500">HOME</a></li>
-            <li><a href="#" className="text-slate-400 hover:text-white duration-500" >ABOUT</a></li>
-            <li><a href="#" className="text-slate-400 hover:text-white duration-500">SKILL</a></li>
-            <li><a href="#" className="text-slate-400 hover:text-white duration-500">PORTFOLIO</a></li>
-            <li><a href="#" className="text-slate-400 hover:text-white duration-500">SERVICE</a></li>
-            <li><a href="/" className="text-slate-400 hover:text-white duration-500 font-semibold">CONTACT</a></li>
+            <li><Link to={"/"} smooth={true} duration={500} className="text-slate-400 hover:text-white duration-500">HOME</Link></li>
+            <li><Link to={"/"} smooth={true} duration={500} className="text-slate-400 hover:text-white duration-500" >ABOUT</Link></li>
+            <li><Link to={"/"} smooth={true} duration={500} className="text-slate-400 hover:text-white duration-500">SKILL</Link></li>
+            <li><Link to={"/"} className="text-slate-400 hover:text-white duration-500">PORTFOLIO</Link></li>
+            {/* <li><Link to={"/contact"} className="text-slate-400 hover:text-white duration-500">SERVICE</Link></li> */}
+            <li><Link to={"/"} className="text-slate-400 hover:text-white duration-500 font-semibold">CONTACT</Link></li>
 
           </ul>
           <button className="nav-btn  bg-blue-600 px-4 p-2 font-semibold text-lg rounded-md max-sm:hidden">Get Started</button>

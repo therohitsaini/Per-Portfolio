@@ -2,32 +2,35 @@ import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import styled, { keyframes, css } from "styled-components";
 
+
+const progressKeyframe = (range) => keyframes`
+0%{
+width: 50%;
+  }
+  100%{
+      width: ${range}%;
+  }`;
+
+const ProgressBar = styled.div`
+width: ${(props) => props.range ?? 20}%;
+max-height: 2rem;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+
+padding: 5px 0px;
+background-color: rgb(218, 222, 223);
+${(props) =>
+  props.range &&
+  css`
+    animation: ${progressKeyframe(props.range)} 2s forwards;
+  `};
+`;
+
 function Skills() {
   const [isCardhover, setIscardHover] = useState(false);
   const [isCardhover_1, setIscardHover_1] = useState(false);
 
-  const progressKeyframe = (range) => keyframes`
-    0%{
-    width: 50%;
-      }
-      100%{
-          width: ${range}%;
-      }`;
 
-  const ProgressBar = styled.div`
-    width: ${(props) => props.range ?? 20}%;
-    max-height: 2rem;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-    padding: 5px 0px;
-    background-color: rgb(218, 222, 223);
-    ${(props) =>
-      props.range &&
-      css`
-        animation: ${progressKeyframe(props.range)} 2s forwards;
-      `};
-  `;
 
   const Button = styled.button`
     background-color: black;
@@ -112,11 +115,11 @@ function Skills() {
 
             <p className="border border-slate-300rounded-md  py- flex justify-between items-cente">
               <ProgressBar
-                range={70}
+                range={90}
                 className="flex justify-between items-center"
               >
                 <p className="pl-2">Javascript </p>{" "}
-                <div className="p text-sm">70%</div>
+                <div className="p text-sm">90%</div>
               </ProgressBar>
               <div className="text-2xl flex justify-center items-center px-2">
                 <Icon icon="material-icon-theme:javascript-map" />
@@ -128,7 +131,7 @@ function Skills() {
                 className="flex justify-between items-center"
               >
                 <p className="pl-2">React js</p>{" "}
-                <div className="p text-sm">70%</div>
+                <div className="p text-sm">80%</div>
               </ProgressBar>
               <div className="text-xl flex justify-center items-center px-2">
                 <Icon icon="devicon:react" />
@@ -148,11 +151,11 @@ function Skills() {
             </p>
             <p className="border border-slate-300 rounded-md  flex justify-between items-center">
               <ProgressBar
-                range={70}
+                range={80}
                 className="flex justify-between items-center"
               >
                 <p className="pl-2">Express </p>{" "}
-                <div className="p text-sm">70%</div>
+                <div className="p text-sm">80%</div>
               </ProgressBar>
 
               <div className="text-xl flex justify-center items-center px-2 ">
@@ -162,11 +165,11 @@ function Skills() {
 
             <p className="border border-slate-300 rounded-md  flex justify-between items-center">
               <ProgressBar
-                range={60}
+                range={70}
                 className="flex justify-between items-center"
               >
                 <p className="pl-2">Node Js </p>{" "}
-                <div className="p text-sm">60%</div>
+                <div className="p text-sm">70%</div>
               </ProgressBar>
 
               <div className="text-xl flex justify-center items-center px-2 ">
@@ -179,10 +182,10 @@ function Skills() {
         <div
           onMouseOver={handleCardHover}
           onMouseLeave={handleCardLeave}
-          className="skill-ui-ux border border-slate-200 w-full   p-10 max-sm:px-5 flex flex-col gap-3 rounded-md hover:bg-blue-600 duration-800 bg-white hover:text-white  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:py-10"
+          className="skill-ui-ux border border-slate-200 w-full duration-500  p-10 max-sm:px-5 flex flex-col gap-3 rounded-md hover:bg-blue-600 duration-800 bg-white hover:text-white  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:py-10"
         >
           <div
-            className={`icone border-2  border-slate-300 h-14 w-14 rounded-full text-5xl flex justify-center items-center  rotate-y-180 duration-800  
+            className={`icone border-2   border-slate-300 duration-700 h-14 w-14 rounded-full text-5xl flex justify-center items-center  rotate-y-180 duration-800  
           ${isCardhover == true ? "text-red-500" : "text-black"}
             `}
           >
@@ -211,7 +214,7 @@ function Skills() {
         <div
           onMouseOver={handleCardHover_1}
           onMouseLeave={handleCardLeave_1}
-          className="skill-ui-ux border border-slate-200 bg-white w-full  p-10 max-sm:px-5 max-sm:py-10 flex flex-col gap-3 rounded-md hover:bg-blue-600 duration-600 hover:text-white max-sm:flex max-sm:flex-col max-sm:items-center"
+          className="skill-ui-ux border  border-slate-200 duration-900 bg-white w-full  p-10 max-sm:px-5 max-sm:py-10 flex flex-col gap-3 rounded-md hover:bg-blue-600 duration-600 hover:text-white max-sm:flex max-sm:flex-col max-sm:items-center"
         >
           <div
             className={`icone border-2 border-slate-300 h-14 w-14 rounded-full  text-5xl flex justify-center items-center ${

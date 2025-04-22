@@ -1,5 +1,6 @@
 import React from "react";
-import { AnimatedLeftWrapper, AnimatedWrapper } from "../styledComponent/StyledCOmp";
+import { AnimatedLeftWrapper, AnimatedWrapper } from "../styledComponent/StyledComp";
+
 
 function About() {
   return (

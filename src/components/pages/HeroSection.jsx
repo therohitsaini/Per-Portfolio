@@ -1,5 +1,5 @@
 import React from 'react'
-import { AnimatedCard, AnimatedLeftWrapper, AnimatedWrapper } from '../styledComponent/StyledCOmp'
+import { AnimatedCard, AnimatedLeftWrapper, AnimatedWrapper } from '../styledComponent/StyledComp'
 
 function HeroSection() {
   return (

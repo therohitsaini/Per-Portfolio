@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Icon } from "@iconify/react";
-import { Element } from "react-scroll";
+import { Icon } from "@iconify/react/dist/iconify.js";
+
 
 function Contact() {
   const form = useRef();
@@ -44,7 +44,7 @@ function Contact() {
   };
   // console.log("formdata", formData);
   return (
-    <Element name="/contact" >
+    // <Element name="/contact" >
       <div className="Contect-Container px-20 bg-slate-200 py-4  max-sm:py-0 max-sm:px-5 ">
         <div className="contect-section flex justify-center items-center flex-col mb-5     ">
           <h3 className="font-semibold text-4xl my-1 max-sm:mt-5">Contact Me</h3>
@@ -142,7 +142,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </Element>
+    // </Element>
   );
 }
 

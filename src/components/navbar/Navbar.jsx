@@ -18,12 +18,11 @@ function Navbar() {
         <nav className="navbar flex justify-between items-center   text-white p-2  border-b border-slate-600 max-sm:py-4 ">
           <h1 className="font-semibold text-xl">PORTFOLIO</h1>
           <ul className="un-order-list flex gap-14 font-semibold max-sm:hidden" >
-            <li><Link to={"/"} smooth={true} duration={500} className="text-slate-400 hover:text-white duration-500">HOME</Link></li>
-            <li><Link to={"/"} smooth={true} duration={500} className="text-slate-400 hover:text-white duration-500" >ABOUT</Link></li>
-            <li><Link to={"/"} smooth={true} duration={500} className="text-slate-400 hover:text-white duration-500">SKILL</Link></li>
-            <li><Link to={"/"} className="text-slate-400 hover:text-white duration-500">PORTFOLIO</Link></li>
+            <li><Link to={"#"}  className="text-slate-400 hover:text-white duration-500">HOME</Link></li>
+            <li><Link to={"/#"} className="text-slate-400 hover:text-white duration-500">SKILL</Link></li>
+            <li><Link to={"/#"} className="text-slate-400 hover:text-white duration-500">PORTFOLIO</Link></li>
             {/* <li><Link to={"/contact"} className="text-slate-400 hover:text-white duration-500">SERVICE</Link></li> */}
-            <li><Link to={"/"} className="text-slate-400 hover:text-white duration-500 font-semibold">CONTACT</Link></li>
+            <li><Link to={"/#"} className="text-slate-400 hover:text-white duration-500 font-semibold">CONTACT</Link></li>
 
           </ul>
           <button className="nav-btn  bg-blue-600 px-4 p-2 font-semibold text-lg rounded-md max-sm:hidden">Get Started</button>

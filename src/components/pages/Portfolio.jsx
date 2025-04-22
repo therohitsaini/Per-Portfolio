@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import { AnimatedCard } from "../styledComponent/StyledCOmp";
+import { AnimatedCard } from "../styledComponent/StyledComp";
 
 
 function Portfolio() {
